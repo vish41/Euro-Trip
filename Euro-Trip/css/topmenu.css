@@ -1,0 +1,111 @@
+.menu-bar
+{
+	background: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	border-radius: 10px;
+	font-family: Calibri;
+	padding: 10px;
+}
+.menu-bar ul
+{
+	padding: 4px;
+	margin: 0px;
+	display: inline-flex;
+	list-style: none;
+}
+.menu-bar ul li
+{
+	width: 120px;
+	padding: 5px 20px;
+	font-size: 15px;
+	margin-right: 5px;
+	position: relative;
+}
+
+.menu-bar>ul>li::after
+{
+	content: ' ';
+	position: absolute;
+	width: 100%;
+	height: 0.175rem;
+	background: rgba(2000, 200, 200, 0.8);
+	left: 0;
+	bottom: 0;
+}
+.menu-bar>ul>li::after
+{
+	transform: scale(0,1);
+	transition: transform 0.5s ease;
+}
+.menu-bar>ul>li:hover::after
+{
+	transform: scale(1,1);
+}
+
+
+
+
+
+.menu-bar ul li a
+{
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+}
+.active, .menu-bar ul li:hover
+{
+	background: rgba(0, 0, 0, 1);
+	border-radius: 5px;
+	color: darkgrey;
+}
+.menu-bar .fa
+{
+	margin-right: 3px;
+}
+.sub-menu1
+{
+	display: none;
+}
+.menu-bar ul li:hover .sub-menu1
+{
+	display: block;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	margin-top: 3px;
+	margin-left: -25px;
+	border-radius: 5px;
+}
+.menu-bar ul li:hover .sub-menu1 ul
+{
+	display: block;
+	margin: 2px;
+}
+.menu-bar ul li:hover .sub-menu1 ul li
+{
+	width: 110px;
+	border-bottom: 2px solid white;
+	text-align: left;
+}
+.menu-bar ul li:hover .sub-menu1 ul li:last-child
+{
+	border:none ;
+}
+.sub-menu1 .fa
+{
+	float: right;
+}
+.sub-menu2
+{
+	display: none;
+	width: 110px;
+	border-radius: 4px;
+}
+.sub-menu3:hover .sub-menu2
+{
+	background: rgba(0, 0, 0, 0.5);
+	display: block;
+	margin-top: -29px;
+	margin-left: 130px;
+	position: absolute;
+	width: 160px;
+}

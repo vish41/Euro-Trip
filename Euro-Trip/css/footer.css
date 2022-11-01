@@ -1,0 +1,39 @@
+footer
+{
+	background: rgba(140, 10, 20, 0.5);
+	height: fit-content;
+	padding: 10px;
+	width: 90%;
+	margin: 20px auto;
+}
+footer p
+{
+	text-align: center;
+	font-family: ;
+	letter-spacing: 1px;
+	font-weight: 100;
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
+	//border: 1px solid white;
+	font-size: 20px;
+}
+footer p .fa
+{
+	margin: 5px 15px;
+	font-size: 30px;
+	border: 1px solid white;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	padding: 5px;
+}
+footer .fa:first-child
+{
+	background: rgba(59, 89, 152, 1.0);
+	color: rgba(237, 240, 245, 1.0);
+}
+footer .fa:last-child
+{
+	color: rgba(29, 155, 240, 1.0);
+	background: white;
+}
